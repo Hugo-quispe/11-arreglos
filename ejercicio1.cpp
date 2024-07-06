@@ -1,19 +1,19 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n,c,s,r;
-    s=0;
-    int arreglo[30];
-    cout<<"ingrese el numero de celdas: ";cin>>n;
-    for(int i=1;i<n;i++){
-        cout<<"ingrese los valores: "<<i+1<<" ";cin>>arreglo[i];
-        s=s+arreglo[i];
-        if(arreglo[i]==0){
-            c=c+1;
+    int s=0,n;
+    float r,p=0;
+        cout<<"ingresé la cantidad de números: ";cin>>n;
+        int numeros[n];
+        for(int i=0;i<n;i++){
+            cout<<"ingresé el: ";cin>>numeros[i];
+            if(numeros[i]==0){
+                p++;
+            }
+            s=s+numeros[i];
         }
-    }
-    r=(c/n)*100;
-    cout<<"la sumatoria de elementos es: "<<s<<endl;
-    cout<<"el porcentaje de ceros ingresados es: "<<r<<"%"<<endl;
+        cout<<"la suma es: "<<s<<endl;
+        r=(p++/n)*100;
+        cout<<"el porcentaje de ceros ingresados es: "<<r<<"%"<<endl;
     return 0;
 }
