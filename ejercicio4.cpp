@@ -8,12 +8,13 @@ int main(){
     return 0;
 }
 void generar(int a){
-    int r=0;
-    int num[a];
+    int num[a],r;
     cout<<"ingrese el primer digito a almacenar: ";cin>>num[0];
-    for(int i=1;i<a;i++){
-        r=r+num[0];
-        r=num[i];
+    for(int j=1;j<a;j++){
+        r=num[0]*(j+1);
+        num[j]=r;
+    }
+    for(int i=0;i<a;i++){
         cout<<"los numeros generados son: "<<num[i]<<endl;
     }
 } 
