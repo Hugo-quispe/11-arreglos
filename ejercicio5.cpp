@@ -23,6 +23,9 @@ int main (){
         }
     }
     cout<<"el total de estudiantes en comun son: "<<p<<endl;
-   
+    for (int b=0;b<p;b++){
+    cout<<"el estudiante en comun es: "<<comun[b]<<endl;
+    }
+
     return 0;
 }
