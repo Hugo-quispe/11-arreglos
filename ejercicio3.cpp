@@ -24,9 +24,9 @@ int main(){
                     }
         }
         r=(s+t)/2;
-        cout<<"el promedio de la temperatura es: "<<r<<endl;
+        cout<<"la temperatura media fue: "<<r<<endl;
     }
-    cout<<"la temperatura menor en todad la semana fue: "<<m<<endl;
+    cout<<"la temperatura menor en toda la semana fue: "<<m<<endl;
 
     return 0;
 }
